@@ -1,0 +1,106 @@
+/* Events.css */
+.events-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-image: 'school-image';
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .school-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 180px;
+    height: auto;
+  }
+
+  .events-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+  
+  .event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    max-height: calc(4 * 135px);
+    overflow-y: auto;
+    padding-right: 15px;
+    padding-left: 15;
+
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .event-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .event-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 30px;
+    
+  }
+  
+  .event-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36,53,110);
+    color: white;
+    width: 90px; 
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+  
+  .event-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .event-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: rgba(36,53,110);
+  }
+  
+  .event-location,
+  .event-time {
+    font-size: 17px;
+    margin-top: 5px;
+  }
+
+
+  
+
+  

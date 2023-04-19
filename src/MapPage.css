@@ -1,0 +1,57 @@
+.school-map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .school-map-image {
+    max-width: 90%;
+    max-height: 80%;
+    margin-left: 150px;
+    padding-top: 20px;
+    
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .map-and-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .level-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  
+  .level-button {
+    background-color: rgba(36, 53, 110, 0.9);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 35px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    outline: none;
+  }
+  
+  .level-button:hover {
+    background-color: rgba(36, 53, 110, 0.8);
+  }
+  
+  .level-button.active {
+    background-color: rgb(97, 97, 107);
+    border: 3px solid white;
+    border-radius: 25px;
+  }

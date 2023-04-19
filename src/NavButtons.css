@@ -1,0 +1,65 @@
+
+.nav-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .nav-button {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  
+  .nav-button-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333;
+    transition: 0.3s;
+  }
+  
+  .nav-button-content svg {
+    color: rgba(36,53,110);
+    width: 80px;
+    height: 80px;
+  }
+  
+  .nav-button.selected .nav-button-content,
+  .nav-button:hover .nav-button-content {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(97, 97, 107);
+    transform: scale(1.1);
+  }
+  
+  .nav-button.selected .nav-button-content svg,
+  .nav-button:hover .nav-button-content svg {
+    color: rgb(97, 97, 107);
+  }
+  
+  .nav-button-content:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-button-content span {
+    margin-top: 0.25rem;
+  }
+  
+  .selected .nav-button-content {
+    border-color: rgba(0, 0, 0, 0.5);
+  }
