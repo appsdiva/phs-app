@@ -3,16 +3,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    height: calc(100vh - 60px); /* Reduce the height to accommodate the nav buttons */
     width: 100%;
   }
   
   .school-map-image {
-    max-width: 90%;
-    max-height: 80%;
-    margin-left: 150px;
-    padding-top: 20px;
-    
+    width: 55%;
+    height: auto;
+    margin-left: 400px;
+    padding-top: 30px;
+    object-fit: contain;
   }
 
   .nav-buttons {
@@ -30,14 +32,19 @@
   .level-buttons {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    position: absolute;
+    top: 40%;
+    right: 10%; /* Adjust this percentage value to move the buttons closer or farther from the map */
+    gap: 10px;
+    transform: translateY(-50%);
   }
   
   .level-button {
+    display: flex;
     background-color: rgba(36, 53, 110, 0.9);
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 35px;
     cursor: pointer;
     text-align: center;
@@ -55,3 +62,19 @@
     border: 3px solid white;
     border-radius: 25px;
   }
+
+  /*
+
+  .level-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    right: 5%; 
+    gap: 10px;
+    transform: translateY(-50%);
+  }
+  */
