@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import UpperLevelMap from '../upper-level-map.png'; 
@@ -17,8 +17,6 @@ const NavButton = ({ to, icon: Icon, children }) => (
     </NavLink>
   );
 
-  
-
   const backgroundImage = {
     backgroundImage: `url(${schoolImage})`,
     backgroundPosition: 'center',
@@ -28,6 +26,16 @@ const NavButton = ({ to, icon: Icon, children }) => (
   };
 
 const MapPage = () => {
+
+  const [currentMap, setCurrentMap] = useState(UpperLevelMap);
+
+  const handleClick = (level) => {
+    if (level === 'upper') {
+      setCurrentMap(UpperLevelMap);
+    } else if (level === 'lower') {
+      setCurrentMap(LowerLevelMap);
+    }
+  };
 
     const navigate = useNavigate();
 
@@ -45,17 +53,17 @@ const MapPage = () => {
             <div className="map-and-buttons-container">
           <TransformWrapper>
             <TransformComponent>
-              <img src={UpperLevelMap} alt="School Map" className="school-map-image" />
+              <img src={currentMap} alt="School Map" className="school-map-image" />
             </TransformComponent>
           </TransformWrapper>
           <div className="level-buttons">
         <button
-          className={`level-button${currentPath === "/upper-level" ? " active" : ""}`}
-          onClick={() => handleButtonClick("/upper-level")}>Upper Level
+           className={`level-button ${currentMap === UpperLevelMap ? 'active' : ''}`}
+           onClick={() => handleClick('upper')}>Upper Level
           </button>
         <button
-          className={`level-button${currentPath === "/lower-level" ? " active" : ""}`}
-          onClick={() => handleButtonClick("/lower-level")}>Lower Level
+           className={`level-button ${currentMap === LowerLevelMap ? 'active' : ''}`}
+           onClick={() => handleClick('lower')}>Lower Level
           </button>
       </div>
           </div>

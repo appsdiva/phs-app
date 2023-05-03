@@ -14,7 +14,7 @@
     text-decoration: none;
     display: inline-block;
     align-items: center;
-    margin: 0.5rem;
+    margin-bottom: 1.5rem;
   }
   
   .nav-button-content {
@@ -22,8 +22,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
