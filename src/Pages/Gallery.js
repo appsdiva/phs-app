@@ -2,6 +2,7 @@
 import React from 'react';
 import './Gallery.css';
 import schoolImage from '../school-image.jpg';
+import schoolLogo from '../school-logo.png';
 
 const Gallery = () => {
   const backgroundImage = {
@@ -14,6 +15,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery-container" style={backgroundImage}>
+    <img src={schoolLogo} alt="School Logo" className="school-logo" />
       <h1 className="gallery-title">Photo Gallery</h1>
       <div className="gallery-iframe-container">
         <iframe

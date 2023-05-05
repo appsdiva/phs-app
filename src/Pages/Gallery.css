@@ -5,6 +5,32 @@
     justify-content: center;
     width: 100%;
     height: 100vh;
+    box-sizing: border-box;
+    box-sizing: border-box;
+  position: relative;
+}
+
+.gallery-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+  .school-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    height: auto;
   }
   
   .gallery-title {
@@ -15,17 +41,21 @@
   }
   
   .gallery-iframe-container {
-    position: center;
+    align-items: center;
+    justify-content: center;
+    
   }
   
   .gallery-iframe {
-    border: 20px solid #1c3b57;
-    border-radius: 20px;
-    width: 250%; /* Updated width */
-    height: 40vh; /* Updated height */
+    border: none;
+    border-radius: 40px;
+    width: 43vw;
+    height: 24.2vw; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
   }
   
+  /*
   .gallery-border {
     position: absolute;
     bottom: -5px;
@@ -38,10 +68,13 @@
     align-items: center;
     border-radius: 0 0 10px 10px;
   }
+  */
   
   .gallery-border-text {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
   }
+
+
   
