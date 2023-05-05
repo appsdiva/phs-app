@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, NavLink, useLocation  } from 'r
 import './App.css';
 import schoolLogo from './school-logo.png';
 import schoolImage from './school-image.jpg';
-import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall } from 'react-icons/fa';
+import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall, FaImages } from 'react-icons/fa';
 import { FaTemperatureHigh } from 'react-icons/fa';
 import Events from './Pages/Events';
 import MapPage from './Pages/MapPage';
@@ -12,6 +12,7 @@ import LowerMapPage from './Pages/LowerMapPage';
 import Grads from './Pages/Grads';
 import Sports from './Pages/Sports';
 import './global.css';
+import Gallery from './Pages/Gallery';
 //import Map from './components/SchoolMap';
 //import Home from '.Home'
 
@@ -35,7 +36,7 @@ const Home = () => (
         
         <NavButton to="/map-page" icon={FaMap}>Map</NavButton>
         <NavButton to="/events-page" icon={FaCalendarAlt}>Events</NavButton>
-        <NavButton to="/grads-page" icon={FaUserGraduate}>Grads</NavButton>
+        <NavButton to="/gallery-page" icon={FaImages}>Gallery</NavButton> 
         <NavButton to="/sports-page" icon={FaBasketballBall}>Sports</NavButton>
       </div>
     <FortCollinsTime/>
@@ -144,6 +145,8 @@ const App = () => (
             <Route path="/scores-page" element={<Sports />} />
             <Route path="/upper-level" element={<MapPage />} />
             <Route path="/lower-level" element={<LowerMapPage />} />
+            <Route path="/gallery-page" element={<Gallery />}
+            />
           </Routes>
         </div>
       

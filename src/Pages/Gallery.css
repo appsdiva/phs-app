@@ -15,14 +15,15 @@
   }
   
   .gallery-iframe-container {
-    position: relative;
+    position: center;
   }
   
   .gallery-iframe {
-    border: 5px solid #1c3b57;
-    border-radius: 10px;
-    width: 60%;
-    height: 60vh;
+    border: 20px solid #1c3b57;
+    border-radius: 20px;
+    width: 250%; /* Updated width */
+    height: 40vh; /* Updated height */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
   .gallery-border {
