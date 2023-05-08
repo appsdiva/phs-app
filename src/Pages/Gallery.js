@@ -1,10 +1,10 @@
 // Gallery.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+import { BrowserRouter as NavLink } from 'react-router-dom';
 import './Gallery.css';
 import schoolImage from '../school-image.jpg';
 import schoolLogo from '../school-logo.png';
-import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall } from 'react-icons/fa';
+import { FaHome, FaMap, FaCalendarAlt, FaBasketballBall } from 'react-icons/fa';
 
 
 const NavButton = ({ to, icon: Icon, children }) => (
@@ -34,7 +34,7 @@ const Gallery = () => {
           className="gallery-iframe"
           src="https://docs.google.com/presentation/d/e/2PACX-1vRPY8Ymv7JJ-qkyNCkEjBu4R2dXNn15mJxjEpKF6hsjCOvYCvGVP9T93owHveHxHE62Pkfi93gny8nz/embed?start=true&loop=true&delayms=5000&rm=minimal"
           
-          allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >
+          title ="PHS Photo Gallery" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >
         </iframe>
       </div>
       <div className="nav-buttons">

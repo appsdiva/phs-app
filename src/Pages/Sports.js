@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+import { BrowserRouter as NavLink } from 'react-router-dom';
 import './Sports.css';
 import schoolImage from '../school-image.jpg';
 import SportsCalendar from './SportsCalendar';

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
+import { BrowserRouter as NavLink } from 'react-router-dom';
 import { fetchUpcomingEvents } from "./api";
 import './Events.css';
 import schoolImage from '../school-image.jpg';
 import schoolLogo from '../school-logo.png';
-import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall, FaImages } from 'react-icons/fa';
+import { FaHome, FaMap, FaBasketballBall, FaImages } from 'react-icons/fa';
 
 const NavButton = ({ to, icon: Icon, children }) => (
     <NavLink to={to} className="nav-button" activeClassName="selected">
