@@ -142,7 +142,7 @@ const App = () => (
             <Route path="/grads-page" element={<Grads />} />
             <Route path="/map-page" element={<MapPage />} />
             <Route path="/events-page"element={<Events />} />
-            <Route path="/scores-page" element={<Sports />} />
+            <Route path="/sports-page" element={<Sports />} />
             <Route path="/upper-level" element={<MapPage />} />
             <Route path="/lower-level" element={<LowerMapPage />} />
             <Route path="/gallery-page" element={<Gallery />}

@@ -1,0 +1,15 @@
+.sports-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .sports-calendar {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
