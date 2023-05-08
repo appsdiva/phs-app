@@ -1,8 +1,20 @@
 // Gallery.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 import './Gallery.css';
 import schoolImage from '../school-image.jpg';
 import schoolLogo from '../school-logo.png';
+import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall } from 'react-icons/fa';
+
+
+const NavButton = ({ to, icon: Icon, children }) => (
+    <NavLink to={to} className="nav-button" activeClassName="selected">
+      <button className="nav-button-content">
+        <Icon size="1.5em" />
+        <span>{children}</span>
+      </button>
+    </NavLink>
+  );
 
 const Gallery = () => {
   const backgroundImage = {
@@ -24,6 +36,12 @@ const Gallery = () => {
           
           allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" >
         </iframe>
+      </div>
+      <div className="nav-buttons">
+        <NavButton to="/" icon={FaHome}>Home</NavButton>
+        <NavButton to="/map-page" icon={FaMap}>Map</NavButton>
+        <NavButton to="/events-page" icon={FaCalendarAlt}>Events</NavButton>
+        <NavButton to="/sports-page" icon={FaBasketballBall}>Sports</NavButton>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import UpperLevelMap from '../upper-level-map.png'; 
 import LowerLevelMap from '../lower-level-map.png';
 import schoolImage from '../school-image.jpg';
-import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall } from 'react-icons/fa';
+import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall, FaImages } from 'react-icons/fa';
 import '../MapPage.css';
 import '../NavButtons.css';
 
@@ -70,7 +70,7 @@ const MapPage = () => {
           <div className="nav-buttons">
             <NavButton to="/" icon={FaHome}>Home</NavButton>
             <NavButton to="/events-page" icon={FaCalendarAlt}>Events</NavButton>
-            <NavButton to="/grads-page" icon={FaUserGraduate}>Grads</NavButton>
+            <NavButton to="/gallery-page" icon={FaImages}>Gallery</NavButton> 
             <NavButton to="/sports-page" icon={FaBasketballBall}>Sports</NavButton>
           </div>
           
