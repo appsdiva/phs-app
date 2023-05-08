@@ -1,10 +1,10 @@
 // src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink, useLocation  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, NavLink} from 'react-router-dom';
 import './App.css';
 import schoolLogo from './school-logo.png';
 import schoolImage from './school-image.jpg';
-import { FaHome, FaUserGraduate, FaMap, FaCalendarAlt, FaBasketballBall, FaImages } from 'react-icons/fa';
+import { FaMap, FaCalendarAlt, FaBasketballBall, FaImages } from 'react-icons/fa';
 import { FaTemperatureHigh } from 'react-icons/fa';
 import Events from './Pages/Events';
 import MapPage from './Pages/MapPage';

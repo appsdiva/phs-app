@@ -14,13 +14,16 @@
     "react-router-dom": "^6.11.0",
     "react-scripts": "5.0.1",
     "react-zoom-pan-pinch": "^3.0.7",
+    "stream-http": "^3.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "buildweb": "webpack"
+    
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +42,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0"
   }
 }
