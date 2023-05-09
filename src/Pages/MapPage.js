@@ -1,5 +1,5 @@
 import {React, useState} from 'react';
-import { BrowserRouter as NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import UpperLevelMap from '../upper-level-map.png'; 
 import LowerLevelMap from '../lower-level-map.png';

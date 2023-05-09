@@ -1,6 +1,6 @@
 // Gallery.js
 import React from 'react';
-import { BrowserRouter as NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Gallery.css';
 import schoolImage from '../school-image.jpg';
 import schoolLogo from '../school-logo.png';

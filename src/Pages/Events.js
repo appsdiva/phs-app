@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { fetchUpcomingEvents } from "./api";
 import './Events.css';
 import schoolImage from '../school-image.jpg';

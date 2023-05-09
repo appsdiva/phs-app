@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import LowerLevelMap from '../lower-level-map.png';
 import schoolImage from '../school-image.jpg';
