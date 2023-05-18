@@ -1,10 +1,9 @@
-// Gallery.js
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Gallery.css';
 import schoolImage from '../school-image.jpg';
 import schoolLogo from '../school-logo.png';
-import { FaHome, FaMap, FaCalendarAlt, FaBasketballBall } from 'react-icons/fa';
+import { FaHome, FaMap, FaCalendarAlt, FaGraduationCap } from 'react-icons/fa';
 
 
 const NavButton = ({ to, icon: Icon, children }) => (
@@ -41,7 +40,7 @@ const Gallery = () => {
         <NavButton to="/" icon={FaHome}>Home</NavButton>
         <NavButton to="/map-page" icon={FaMap}>Map</NavButton>
         <NavButton to="/events-page" icon={FaCalendarAlt}>Events</NavButton>
-        <NavButton to="/sports-page" icon={FaBasketballBall}>Sports</NavButton>
+        <NavButton to="/grads-page" icon={FaGraduationCap}>Seniors</NavButton>
       </div>
     </div>
   );

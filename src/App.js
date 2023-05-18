@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes, NavLink} from 'react-router-dom
 import './App.css';
 import schoolLogo from './school-logo.png';
 import schoolImage from './school-image.jpg';
-import { FaMap, FaCalendarAlt, FaBasketballBall, FaImages } from 'react-icons/fa';
+import { FaMap, FaCalendarAlt, FaGraduationCap, FaImages } from 'react-icons/fa';
 import { FaTemperatureHigh } from 'react-icons/fa';
 import Events from './Pages/Events';
 import MapPage from './Pages/MapPage';
@@ -37,7 +37,7 @@ const Home = () => (
         <NavButton to="/map-page" icon={FaMap}>Map</NavButton>
         <NavButton to="/events-page" icon={FaCalendarAlt}>Events</NavButton>
         <NavButton to="/gallery-page" icon={FaImages}>Gallery</NavButton> 
-        <NavButton to="/sports-page" icon={FaBasketballBall}>Sports</NavButton>
+        <NavButton to="/grads-page" icon={FaGraduationCap}>Seniors</NavButton>
       </div>
     <FortCollinsTime/>
     <WeatherInfo />

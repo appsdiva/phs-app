@@ -1,0 +1,35 @@
+.grads-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.seniors-photo {
+    max-width: 80%;
+    height: auto;
+    justify-content: center;
+}
+
+.seniors-buttons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+  
+  .grads-title {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+ 
+  .gallery-border-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
