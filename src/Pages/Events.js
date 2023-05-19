@@ -4,7 +4,7 @@ import { fetchUpcomingEvents } from "./api";
 import './Events.css';
 import schoolImage from '../school-image.jpg';
 import schoolLogo from '../school-logo.png';
-import { FaHome, FaMap, FaBasketballBall, FaImages } from 'react-icons/fa';
+import { FaHome, FaMap, FaImages, FaGraduationCap } from 'react-icons/fa';
 
 const NavButton = ({ to, icon: Icon, children }) => (
     <NavLink to={to} className="nav-button" activeClassName="selected">
@@ -56,7 +56,7 @@ const Events = () => {
         <NavButton to="/" icon={FaHome}>Home</NavButton>
         <NavButton to="/map-page" icon={FaMap}>Map</NavButton>
         <NavButton to="/gallery-page" icon={FaImages}>Gallery</NavButton> 
-        <NavButton to="/sports-page" icon={FaBasketballBall}>Sports</NavButton>
+        <NavButton to="/sports-page" icon={FaGraduationCap}>Seniors</NavButton>
       </div>
     </div>
   );
