@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/phs-app/static/css/main.8d8c2e07.css",
-    "main.js": "/phs-app/static/js/main.b5fd51bb.js",
+    "main.js": "/phs-app/static/js/main.ca28ff15.js",
     "static/js/787.1ed43fc1.chunk.js": "/phs-app/static/js/787.1ed43fc1.chunk.js",
     "static/media/2023seniors.jpg": "/phs-app/static/media/2023seniors.ca1f47007d70a764fa33.jpg",
     "static/media/school-image.jpg": "/phs-app/static/media/school-image.1f5467fd4f0cf3d97195.jpg",
@@ -10,11 +10,11 @@
     "static/media/school-logo.png": "/phs-app/static/media/school-logo.3aa904fc85d8ebad6047.png",
     "index.html": "/phs-app/index.html",
     "main.8d8c2e07.css.map": "/phs-app/static/css/main.8d8c2e07.css.map",
-    "main.b5fd51bb.js.map": "/phs-app/static/js/main.b5fd51bb.js.map",
+    "main.ca28ff15.js.map": "/phs-app/static/js/main.ca28ff15.js.map",
     "787.1ed43fc1.chunk.js.map": "/phs-app/static/js/787.1ed43fc1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8d8c2e07.css",
-    "static/js/main.b5fd51bb.js"
+    "static/js/main.ca28ff15.js"
   ]
 }
